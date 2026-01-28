@@ -1,0 +1,21 @@
+# Python virtual environments
+venv/
+.env/
+__pycache__/
+*.pyc
+
+# ML model files
+*.pth
+*.keras
+*.h5
+
+# Outputs / generated data
+output/
+outputs/
+segmentation_results/
+test_patient/
+Sample_Test_Data*
+
+# OS files
+Thumbs.db
+.DS_Store

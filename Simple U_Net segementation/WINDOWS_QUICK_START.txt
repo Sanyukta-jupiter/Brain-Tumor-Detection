@@ -1,0 +1,44 @@
+QUICK START - WINDOWS DESKTOP
+================================
+
+1. DOWNLOAD THESE FILES to a folder on your desktop:
+   • simple_unet_model_complete.pth     (model file)
+   • simple_unet_inference_script.py    (python script)
+   • simple_unet_segmentation.bat       (this file)
+   • simple_unet_gui.bat                (optional GUI)
+
+2. INSTALL PYTHON if not already installed:
+   • Download Python 3.8+ from python.org
+   • During installation, check "Add Python to PATH"
+
+3. INSTALL PACKAGES (open Command Prompt as Admin):
+   pip install torch torchvision torchaudio numpy pillow opencv-python matplotlib
+
+4. EASY USAGE - DRAG AND DROP:
+   • Create a folder with 4 MRI images:
+        - flair.png
+        - t1.png
+        - t1ce.png
+        - t2.png
+   • Drag and drop the folder onto "simple_unet_segmentation.bat"
+   • Results appear automatically!
+
+5. ALTERNATIVE - GUI APPLICATION:
+   • Double-click "simple_unet_gui.bat"
+   • Click "Browse" to select patient folder
+   • Click "Run Segmentation"
+
+RESULTS:
+• Saved to: patient_folder/simple_unet_results/
+• Includes: Probability maps, binary masks, visualizations, reports
+• Model Performance: 90.74% validation Dice score
+
+TROUBLESHOOTING:
+• If Python not found: Reinstall Python and check "Add to PATH"
+• If packages missing: Run pip install commands above
+• If images not found: Ensure they're named correctly
+
+SUPPORT:
+Model: SimpleUNet (31M parameters)
+Trained on: BraTS2020 dataset
+Validation Dice: 90.74%
